@@ -32,7 +32,7 @@ Lo que lleva a resultados mas consistentes en la variable **"acumulador"**
 Mientras tanto, al descomentar las lineas 11, 12, 19 y 20, aumenta la posibilidad de condiciones de carrera debido a la competencia por el recurso compartido.
 Lo que puede causar resultados impredecibles y diferentes  valores finales para **"acumulador"** en cada ejecución.
 
-## Codigo funcionando 
+## Código funcionando 
 
 #include <pthread.h>
 
