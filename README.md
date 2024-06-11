@@ -90,3 +90,7 @@ int main(int argc, char *argv[])
     pthread_exit(NULL); // como los hilos que cree ya terminaron de ejecutarse, termino yo tambien.
 }
 ```
+## Punto 2B
+
+
+![2 comensales, 8 hamburguesas](https://github.com/MatuteCar/ASO2024TPs/blob/main/hamburguesas.png)
