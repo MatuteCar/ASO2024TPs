@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# Solicitar al usuario que ingrese un nombre
+# Solicite al usuario que ingrese un nombre
 echo "Ingrese un nombre para ver su edad estimada: "
 
 read nombre
