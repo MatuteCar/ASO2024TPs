@@ -10,7 +10,7 @@ echo "Un numero aleatorio entre 1 y 100 fue generado. Intente adivinarlo:"
 while true; do
     read -p "Ingresa tu numero: " intento
 
-    # Validar si el intento es un numero valido.
+    # Validar, si el intento es un numero valido.
     if ! [[ "$intento" =~ ^[0-9]+$ ]]; then
         echo "Error: Debes ingresar un numero entero."
         continue
