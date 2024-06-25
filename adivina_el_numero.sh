@@ -1,28 +1,28 @@
 #!/bin/bash
 
-# Generar un número aleatorio entre 1 y 100
+# Generar un numero aleatorio entre 1 y 100
 numero_aleatorio=$((RANDOM % 100 + 1))
 
 
 echo "Un numero aleatorio entre 1 y 100 fue generado. Intente adivinarlo:"
 
-# Iniciar el bucle para permitir múltiples intentos
+# Iniciar el bucle para permitir multiples intentos
 while true; do
-    read -p "Ingresa tu número: " intento
+    read -p "Ingresa tu numero: " intento
 
-    # Validar si el intento es un número válido
+    # Validar si el intento es un numero valido
     if ! [[ "$intento" =~ ^[0-9]+$ ]]; then
-        echo "Error: Debes ingresar un número entero."
+        echo "Error: Debes ingresar un numero entero."
         continue
     fi
 
-    # Comparar el intento con el número secreto
+    # Comparar el intento con el numero secreto
     if [ "$intento" -eq "$numero_aleatorio" ]; then
-        echo "¡Felicitaciones! Has adivinado el número secreto."
+        echo "¡Felicitaciones! Has adivinado el numero secreto."
         break
     elif [ "$intento" -lt "$numero_aleatorio" ]; then
-        echo "El número es más alto. Intenta nuevamente."
+        echo "El numero es más alto. Intenta nuevamente."
     else
-        echo "El número es más bajo. Intenta nuevamente."
+        echo "El numero es más bajo. Intenta nuevamente."
     fi
 done
